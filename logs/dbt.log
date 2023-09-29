@@ -1,0 +1,766 @@
+[0m23:09:24.237381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc23bc58990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc23c022fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc23c135990>]}
+
+
+============================== 23:09:24.240343 | a10a40af-e789-4141-88ee-c6d1ccfc15a4 ==============================
+[0m23:09:24.240343 [info ] [MainThread]: Running with dbt=1.6.2
+[0m23:09:24.240917 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/ivan/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m23:09:39.323596 [debug] [MainThread]: Starter project path: /home/ivan/dbt-env/lib/python3.11/site-packages/dbt/include/starter_project
+[0m23:09:39.329751 [info ] [MainThread]: 
+Your new dbt project "dbt_spreadsheet_transf_iv_expenses" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:09:39.330198 [info ] [MainThread]: Setting up your profile.
+[0m23:09:42.115987 [debug] [MainThread]: Command `dbt init` succeeded at 23:09:42.115792 after 17.88 seconds
+[0m23:09:42.116353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc23bfec090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc23be50ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc23c344c10>]}
+[0m23:09:42.116700 [debug] [MainThread]: Flushing usage events
+[0m23:15:42.984321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68183ca450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681610a290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6815f5bf90>]}
+
+
+============================== 23:15:42.987035 | 321d7bcf-dd6a-4f78-a1ea-77566f32ff26 ==============================
+[0m23:15:42.987035 [info ] [MainThread]: Running with dbt=1.6.2
+[0m23:15:42.987526 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/Projects/dbt_spreadsheet_transf_iv_expenses', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/Projects/dbt_spreadsheet_transf_iv_expenses/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m23:15:43.050929 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '321d7bcf-dd6a-4f78-a1ea-77566f32ff26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68160895d0>]}
+[0m23:15:43.058029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '321d7bcf-dd6a-4f78-a1ea-77566f32ff26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68163dd610>]}
+[0m23:15:43.058686 [info ] [MainThread]: Registered adapter: postgres=1.6.2
+[0m23:15:43.065577 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m23:15:43.066015 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:15:43.066381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '321d7bcf-dd6a-4f78-a1ea-77566f32ff26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f68163a2a50>]}
+[0m23:15:43.591913 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_spreadsheet_transf_iv_expenses.example
+[0m23:15:43.596040 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '321d7bcf-dd6a-4f78-a1ea-77566f32ff26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6815c3af50>]}
+[0m23:15:43.606376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '321d7bcf-dd6a-4f78-a1ea-77566f32ff26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6815c46050>]}
+[0m23:15:43.606823 [info ] [MainThread]: Found 7 models, 0 sources, 0 exposures, 0 metrics, 349 macros, 0 groups, 0 semantic models
+[0m23:15:43.607151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '321d7bcf-dd6a-4f78-a1ea-77566f32ff26', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6815c43090>]}
+[0m23:15:43.608347 [info ] [MainThread]: 
+[0m23:15:43.608676 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m23:15:43.609259 [debug] [MainThread]: Command end result
+[0m23:15:43.614798 [debug] [MainThread]: Command `dbt test` succeeded at 23:15:43.614657 after 0.64 seconds
+[0m23:15:43.615160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681a595010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681a594710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f681a5951d0>]}
+[0m23:15:43.615504 [debug] [MainThread]: Flushing usage events
+[0m23:15:58.369723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2e9aebb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2e9b7a9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2e97b46d0>]}
+
+
+============================== 23:15:58.372312 | 1e449e72-86ae-4139-a965-f2f641259d94 ==============================
+[0m23:15:58.372312 [info ] [MainThread]: Running with dbt=1.6.2
+[0m23:15:58.372810 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/opt/Projects/dbt_spreadsheet_transf_iv_expenses', 'log_path': '/opt/Projects/dbt_spreadsheet_transf_iv_expenses/logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m23:15:58.373177 [info ] [MainThread]: dbt version: 1.6.2
+[0m23:15:58.373485 [info ] [MainThread]: python version: 3.11.4
+[0m23:15:58.373796 [info ] [MainThread]: python path: /home/ivan/dbt-env/bin/python3
+[0m23:15:58.374089 [info ] [MainThread]: os info: Linux-6.2.16-3-pve-x86_64-with-glibc2.37
+[0m23:15:58.408368 [info ] [MainThread]: Using profiles dir at /opt/Projects/dbt_spreadsheet_transf_iv_expenses
+[0m23:15:58.408832 [info ] [MainThread]: Using profiles.yml file at /opt/Projects/dbt_spreadsheet_transf_iv_expenses/profiles.yml
+[0m23:15:58.409167 [info ] [MainThread]: Using dbt_project.yml file at /opt/Projects/dbt_spreadsheet_transf_iv_expenses/dbt_project.yml
+[0m23:15:58.409606 [info ] [MainThread]: adapter type: postgres
+[0m23:15:58.409894 [info ] [MainThread]: adapter version: 1.6.2
+[0m23:15:58.424763 [info ] [MainThread]: Configuration:
+[0m23:15:58.425132 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m23:15:58.425433 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m23:15:58.425713 [info ] [MainThread]: Required dependencies:
+[0m23:15:58.426010 [debug] [MainThread]: Executing "git --help"
+[0m23:15:58.427710 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m23:15:58.428068 [debug] [MainThread]: STDERR: "b''"
+[0m23:15:58.428352 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m23:15:58.428638 [info ] [MainThread]: Connection:
+[0m23:15:58.428930 [info ] [MainThread]:   host: 192.168.1.15
+[0m23:15:58.429255 [info ] [MainThread]:   port: 5432
+[0m23:15:58.429522 [info ] [MainThread]:   user: postgres
+[0m23:15:58.429769 [info ] [MainThread]:   database: ivan_pessoal
+[0m23:15:58.430033 [info ] [MainThread]:   schema: personal_expenses
+[0m23:15:58.430277 [info ] [MainThread]:   connect_timeout: 10
+[0m23:15:58.430524 [info ] [MainThread]:   role: None
+[0m23:15:58.430770 [info ] [MainThread]:   search_path: None
+[0m23:15:58.431021 [info ] [MainThread]:   keepalives_idle: 0
+[0m23:15:58.431266 [info ] [MainThread]:   sslmode: None
+[0m23:15:58.431508 [info ] [MainThread]:   sslcert: None
+[0m23:15:58.431764 [info ] [MainThread]:   sslkey: None
+[0m23:15:58.432096 [info ] [MainThread]:   sslrootcert: None
+[0m23:15:58.432345 [info ] [MainThread]:   application_name: dbt
+[0m23:15:58.432589 [info ] [MainThread]:   retries: 1
+[0m23:15:58.432897 [info ] [MainThread]: Registered adapter: postgres=1.6.2
+[0m23:15:58.433344 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m23:15:58.433611 [debug] [MainThread]: Using postgres connection "debug"
+[0m23:15:58.433863 [debug] [MainThread]: On debug: select 1 as id
+[0m23:15:58.434108 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:15:58.446783 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m23:15:58.447738 [debug] [MainThread]: On debug: Close
+[0m23:15:58.448107 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m23:15:58.448431 [info ] [MainThread]: [32mAll checks passed![0m
+[0m23:15:58.448958 [debug] [MainThread]: Command `dbt debug` succeeded at 23:15:58.448838 after 0.08 seconds
+[0m23:15:58.449309 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m23:15:58.449627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2e9550c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2edcb5050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2edcb5550>]}
+[0m23:15:58.449997 [debug] [MainThread]: Flushing usage events
+[0m23:16:05.506980 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b9a4b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b892950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41db887d0>]}
+
+
+============================== 23:16:05.509406 | 68f223b9-e066-4cca-92ad-156505ccb32d ==============================
+[0m23:16:05.509406 [info ] [MainThread]: Running with dbt=1.6.2
+[0m23:16:05.510014 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/opt/Projects/dbt_spreadsheet_transf_iv_expenses', 'version_check': 'True', 'debug': 'False', 'log_path': '/opt/Projects/dbt_spreadsheet_transf_iv_expenses/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m23:16:05.564143 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b85dc10>]}
+[0m23:16:05.571338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b39d910>]}
+[0m23:16:05.571901 [info ] [MainThread]: Registered adapter: postgres=1.6.2
+[0m23:16:05.578867 [debug] [MainThread]: checksum: 8d66c46a7c5c0e5717f369273dbde9db64740684d9ba42e6442c1808d698ae9f, vars: {}, profile: , target: , version: 1.6.2
+[0m23:16:05.595729 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m23:16:05.596116 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m23:16:05.596793 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_spreadsheet_transf_iv_expenses.example
+[0m23:16:05.601588 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41ba6b5d0>]}
+[0m23:16:05.608715 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41aef3d50>]}
+[0m23:16:05.609122 [info ] [MainThread]: Found 7 models, 0 sources, 0 exposures, 0 metrics, 349 macros, 0 groups, 0 semantic models
+[0m23:16:05.609542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41ecc45d0>]}
+[0m23:16:05.610881 [info ] [MainThread]: 
+[0m23:16:05.611652 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m23:16:05.612839 [debug] [ThreadPool]: Acquiring new postgres connection 'list_ivan_pessoal'
+[0m23:16:05.622045 [debug] [ThreadPool]: Using postgres connection "list_ivan_pessoal"
+[0m23:16:05.622339 [debug] [ThreadPool]: On list_ivan_pessoal: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "connection_name": "list_ivan_pessoal"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m23:16:05.622590 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:16:05.632006 [debug] [ThreadPool]: SQL status: SELECT 28 in 0.0 seconds
+[0m23:16:05.633332 [debug] [ThreadPool]: On list_ivan_pessoal: Close
+[0m23:16:05.634980 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_ivan_pessoal, now list_ivan_pessoal_personal_expenses)
+[0m23:16:05.640110 [debug] [ThreadPool]: Using postgres connection "list_ivan_pessoal_personal_expenses"
+[0m23:16:05.640388 [debug] [ThreadPool]: On list_ivan_pessoal_personal_expenses: BEGIN
+[0m23:16:05.640638 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:16:05.647355 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.647653 [debug] [ThreadPool]: Using postgres connection "list_ivan_pessoal_personal_expenses"
+[0m23:16:05.647986 [debug] [ThreadPool]: On list_ivan_pessoal_personal_expenses: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "connection_name": "list_ivan_pessoal_personal_expenses"} */
+select
+      'ivan_pessoal' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'personal_expenses'
+    union all
+    select
+      'ivan_pessoal' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'personal_expenses'
+    union all
+    select
+      'ivan_pessoal' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'personal_expenses'
+  
+[0m23:16:05.651634 [debug] [ThreadPool]: SQL status: SELECT 25 in 0.0 seconds
+[0m23:16:05.653073 [debug] [ThreadPool]: On list_ivan_pessoal_personal_expenses: ROLLBACK
+[0m23:16:05.653441 [debug] [ThreadPool]: On list_ivan_pessoal_personal_expenses: Close
+[0m23:16:05.660421 [debug] [MainThread]: Using postgres connection "master"
+[0m23:16:05.660696 [debug] [MainThread]: On master: BEGIN
+[0m23:16:05.660943 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:16:05.667592 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.667891 [debug] [MainThread]: Using postgres connection "master"
+[0m23:16:05.668265 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m23:16:05.679920 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:16:05.681031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b9d0110>]}
+[0m23:16:05.681424 [debug] [MainThread]: On master: ROLLBACK
+[0m23:16:05.681782 [debug] [MainThread]: Using postgres connection "master"
+[0m23:16:05.682027 [debug] [MainThread]: On master: BEGIN
+[0m23:16:05.682531 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.682777 [debug] [MainThread]: On master: COMMIT
+[0m23:16:05.683041 [debug] [MainThread]: Using postgres connection "master"
+[0m23:16:05.683296 [debug] [MainThread]: On master: COMMIT
+[0m23:16:05.683641 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.683891 [debug] [MainThread]: On master: Close
+[0m23:16:05.684541 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:16:05.685003 [info ] [MainThread]: 
+[0m23:16:05.689121 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes
+[0m23:16:05.689560 [info ] [Thread-1 (]: 1 of 7 START sql table model personal_expenses.stg_cartoes ..................... [RUN]
+[0m23:16:05.690289 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_ivan_pessoal_personal_expenses, now model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes)
+[0m23:16:05.690622 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes
+[0m23:16:05.696904 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.697565 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes (compile): 23:16:05.690824 => 23:16:05.697384
+[0m23:16:05.697892 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes
+[0m23:16:05.730099 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.730744 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.731061 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: BEGIN
+[0m23:16:05.731350 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:05.738314 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.738636 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.738956 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."stg_cartoes__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with cartoes as (
+    SELECT 
+        categoria
+        , TO_DATE("Data", 'DD/MM/YYYY')::DATE as data
+        , "Descrição" as descricao
+        , REPLACE(REPLACE(REPLACE(valor, 'R$', ''), '.', ''), ',', '.')::NUMERIC AS valor_total
+        , "Nº Parcelas"::INTEGER as parcelas
+        , "Cartão" as cartao
+        , "Recorrência" as recorrencia
+    FROM personal_expenses.cartoes
+)
+
+select * from cartoes
+  );
+  
+[0m23:16:05.745674 [debug] [Thread-1 (]: SQL status: SELECT 270 in 0.0 seconds
+[0m23:16:05.751400 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.751723 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_cartoes" rename to "stg_cartoes__dbt_backup"
+[0m23:16:05.752658 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.755345 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.755654 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_cartoes__dbt_tmp" rename to "stg_cartoes"
+[0m23:16:05.756181 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.772841 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: COMMIT
+[0m23:16:05.773185 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.773504 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: COMMIT
+[0m23:16:05.775626 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.782627 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"
+[0m23:16:05.782946 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."stg_cartoes__dbt_backup" cascade
+[0m23:16:05.785725 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:05.787108 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes (execute): 23:16:05.698094 => 23:16:05.786924
+[0m23:16:05.787446 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes: Close
+[0m23:16:05.788158 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b9d3ad0>]}
+[0m23:16:05.788688 [info ] [Thread-1 (]: 1 of 7 OK created sql table model personal_expenses.stg_cartoes ................ [[32mSELECT 270[0m in 0.10s]
+[0m23:16:05.789272 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes
+[0m23:16:05.789676 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado
+[0m23:16:05.790270 [info ] [Thread-1 (]: 2 of 7 START sql table model personal_expenses.stg_consolidado ................. [RUN]
+[0m23:16:05.790889 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_spreadsheet_transf_iv_expenses.stg_cartoes, now model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado)
+[0m23:16:05.791218 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado
+[0m23:16:05.793752 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.794293 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado (compile): 23:16:05.791425 => 23:16:05.794109
+[0m23:16:05.794593 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado
+[0m23:16:05.798333 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.798747 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.799042 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: BEGIN
+[0m23:16:05.799325 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:05.806211 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.806541 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.806870 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."stg_consolidado__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with consolidado as (
+    SELECT 
+        categoria
+        , TO_DATE("Data", 'DD/MM/YYYY')::DATE as data
+        , "Descrição" as descricao
+        , REPLACE(REPLACE(REPLACE(valor, 'R$', ''), '.', ''), ',', '.')::NUMERIC AS valor_total
+        , "Código Conta" as cod_conta
+        , natureza
+        , "Recorrência" as recorrencia
+    FROM personal_expenses.consolidado
+)
+
+select * from consolidado
+  );
+  
+[0m23:16:05.811195 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:16:05.814069 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.814379 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_consolidado" rename to "stg_consolidado__dbt_backup"
+[0m23:16:05.814939 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.817175 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.817479 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_consolidado__dbt_tmp" rename to "stg_consolidado"
+[0m23:16:05.818004 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.819888 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: COMMIT
+[0m23:16:05.820237 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.820524 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: COMMIT
+[0m23:16:05.821562 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.823900 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"
+[0m23:16:05.824234 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."stg_consolidado__dbt_backup" cascade
+[0m23:16:05.826194 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:05.827462 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado (execute): 23:16:05.794795 => 23:16:05.827284
+[0m23:16:05.827770 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado: Close
+[0m23:16:05.828440 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41aecabd0>]}
+[0m23:16:05.828929 [info ] [Thread-1 (]: 2 of 7 OK created sql table model personal_expenses.stg_consolidado ............ [[32mSELECT 0[0m in 0.04s]
+[0m23:16:05.829509 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado
+[0m23:16:05.829904 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.stg_extrato
+[0m23:16:05.830453 [info ] [Thread-1 (]: 3 of 7 START sql table model personal_expenses.stg_extrato ..................... [RUN]
+[0m23:16:05.831116 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_spreadsheet_transf_iv_expenses.stg_consolidado, now model.dbt_spreadsheet_transf_iv_expenses.stg_extrato)
+[0m23:16:05.831422 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.stg_extrato
+[0m23:16:05.833762 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.834281 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_extrato (compile): 23:16:05.831626 => 23:16:05.834100
+[0m23:16:05.834577 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.stg_extrato
+[0m23:16:05.838349 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.838753 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.839046 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: BEGIN
+[0m23:16:05.839325 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:05.846047 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.846424 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.846778 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."stg_extrato__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with extrato as (
+    SELECT 
+        categoria
+        , TO_DATE("Data", 'DD/MM/YYYY')::DATE as data
+        , "Descrição" as descricao
+        , REPLACE(REPLACE(REPLACE(valor, 'R$', ''), '.', ''), ',', '.')::NUMERIC AS valor_total
+        , "Código Conta" as cod_conta
+        , natureza
+        , "Recorrência" as recorrencia
+    FROM personal_expenses.extrato
+)
+
+select * from extrato
+  );
+  
+[0m23:16:05.851060 [debug] [Thread-1 (]: SQL status: SELECT 495 in 0.0 seconds
+[0m23:16:05.855381 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.855710 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_extrato" rename to "stg_extrato__dbt_backup"
+[0m23:16:05.856312 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.858517 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.858819 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_extrato__dbt_tmp" rename to "stg_extrato"
+[0m23:16:05.859343 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.861276 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: COMMIT
+[0m23:16:05.861570 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.861855 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: COMMIT
+[0m23:16:05.863354 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.865525 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"
+[0m23:16:05.865827 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_extrato"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."stg_extrato__dbt_backup" cascade
+[0m23:16:05.867732 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:05.869014 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_extrato (execute): 23:16:05.834777 => 23:16:05.868826
+[0m23:16:05.869318 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_extrato: Close
+[0m23:16:05.869939 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b87cb10>]}
+[0m23:16:05.870416 [info ] [Thread-1 (]: 3 of 7 OK created sql table model personal_expenses.stg_extrato ................ [[32mSELECT 495[0m in 0.04s]
+[0m23:16:05.870978 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.stg_extrato
+[0m23:16:05.871358 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao
+[0m23:16:05.871763 [info ] [Thread-1 (]: 4 of 7 START sql table model personal_expenses.stg_movimentacao ................ [RUN]
+[0m23:16:05.872369 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_spreadsheet_transf_iv_expenses.stg_extrato, now model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao)
+[0m23:16:05.872686 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao
+[0m23:16:05.874989 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.875499 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao (compile): 23:16:05.872895 => 23:16:05.875322
+[0m23:16:05.875814 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao
+[0m23:16:05.879727 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.880183 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.880491 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: BEGIN
+[0m23:16:05.880776 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:05.887701 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.888094 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.888444 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."stg_movimentacao__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with movimentacao as (
+    SELECT 
+        TO_DATE("Data", 'DD/MM/YYYY')::DATE as data
+        , "Descrição" as descricao
+        , REPLACE(REPLACE(REPLACE(valor, 'R$', ''), '.', ''), ',', '.')::NUMERIC AS valor_total
+        , origem
+        , destino
+    FROM personal_expenses.movimentacao
+)
+
+select * from movimentacao
+  );
+  
+[0m23:16:05.894613 [debug] [Thread-1 (]: SQL status: SELECT 52 in 0.0 seconds
+[0m23:16:05.897562 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.897873 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_movimentacao" rename to "stg_movimentacao__dbt_backup"
+[0m23:16:05.898443 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.900704 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.901009 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"} */
+alter table "ivan_pessoal"."personal_expenses"."stg_movimentacao__dbt_tmp" rename to "stg_movimentacao"
+[0m23:16:05.901526 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.903232 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: COMMIT
+[0m23:16:05.903531 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.903822 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: COMMIT
+[0m23:16:05.905261 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.907530 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"
+[0m23:16:05.907833 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."stg_movimentacao__dbt_backup" cascade
+[0m23:16:05.909875 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:05.911141 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao (execute): 23:16:05.876061 => 23:16:05.910950
+[0m23:16:05.911482 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao: Close
+[0m23:16:05.912173 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41b382a90>]}
+[0m23:16:05.912658 [info ] [Thread-1 (]: 4 of 7 OK created sql table model personal_expenses.stg_movimentacao ........... [[32mSELECT 52[0m in 0.04s]
+[0m23:16:05.913226 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao
+[0m23:16:05.913656 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes
+[0m23:16:05.914146 [info ] [Thread-1 (]: 5 of 7 START sql table model personal_expenses.vw_cartoes ...................... [RUN]
+[0m23:16:05.914730 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_spreadsheet_transf_iv_expenses.stg_movimentacao, now model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes)
+[0m23:16:05.915065 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes
+[0m23:16:05.917707 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.918285 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes (compile): 23:16:05.915272 => 23:16:05.918110
+[0m23:16:05.918622 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes
+[0m23:16:05.922388 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.922856 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.923187 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: BEGIN
+[0m23:16:05.923507 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:05.930447 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.930860 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.931270 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."vw_cartoes__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with cartoes as (
+	SELECT categoria
+        , "data"
+        , descricao
+        , valor_total
+        , parcelas
+        , cartao
+        , recorrencia
+        , parcelas as orig_parc
+	FROM "ivan_pessoal"."personal_expenses"."stg_cartoes"
+)
+, temp as (
+    SELECT
+        e.categoria,
+        (e.data + (interval '1 month' * (gen - 1)))::date AS data,
+        e.descricao,
+        e.valor_total / e.parcelas AS valor_total,
+        1 AS parcelas,
+        e.cartao,
+        e.recorrencia
+    FROM cartoes e
+    JOIN generate_series(1, e.parcelas) AS gen ON 1=1
+)
+
+select categoria
+    , "data"
+    , extract(year from "data") as ano
+    , extract(month from "data") as mes
+    , descricao
+    , valor_total
+    , parcelas
+    , cartao
+    , 'Saída' as natureza
+    , recorrencia
+     from temp
+  );
+  
+[0m23:16:05.936540 [debug] [Thread-1 (]: SQL status: SELECT 309 in 0.0 seconds
+[0m23:16:05.939487 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.939834 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"} */
+alter table "ivan_pessoal"."personal_expenses"."vw_cartoes" rename to "vw_cartoes__dbt_backup"
+[0m23:16:05.940427 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.942572 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.942913 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"} */
+alter table "ivan_pessoal"."personal_expenses"."vw_cartoes__dbt_tmp" rename to "vw_cartoes"
+[0m23:16:05.943465 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.945391 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: COMMIT
+[0m23:16:05.945723 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.946046 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: COMMIT
+[0m23:16:05.947550 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.949949 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"
+[0m23:16:05.950294 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."vw_cartoes__dbt_backup" cascade
+[0m23:16:05.952262 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:05.953510 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes (execute): 23:16:05.918825 => 23:16:05.953345
+[0m23:16:05.953845 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes: Close
+[0m23:16:05.954492 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41a731c50>]}
+[0m23:16:05.954995 [info ] [Thread-1 (]: 5 of 7 OK created sql table model personal_expenses.vw_cartoes ................. [[32mSELECT 309[0m in 0.04s]
+[0m23:16:05.955616 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes
+[0m23:16:05.956036 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado
+[0m23:16:05.956535 [info ] [Thread-1 (]: 6 of 7 START sql table model personal_expenses.vw_consolidado .................. [RUN]
+[0m23:16:05.957138 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_spreadsheet_transf_iv_expenses.vw_cartoes, now model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado)
+[0m23:16:05.957486 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado
+[0m23:16:05.959964 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.960494 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado (compile): 23:16:05.957700 => 23:16:05.960325
+[0m23:16:05.960822 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado
+[0m23:16:05.966100 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.966548 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.966876 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: BEGIN
+[0m23:16:05.967191 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:05.973943 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:05.974355 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.974725 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."vw_consolidado__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with consolidado as (
+    SELECT 
+        categoria
+        , data
+        , extract(year from data) as ano
+        , extract(month from data) as mes
+        , descricao
+        , valor_total
+        , cod_conta
+        , natureza
+        , recorrencia
+    FROM "ivan_pessoal"."personal_expenses"."stg_consolidado"
+)
+
+select * from consolidado
+  );
+  
+[0m23:16:05.978202 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m23:16:05.981023 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.981380 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"} */
+alter table "ivan_pessoal"."personal_expenses"."vw_consolidado" rename to "vw_consolidado__dbt_backup"
+[0m23:16:05.981918 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.984230 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.984592 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"} */
+alter table "ivan_pessoal"."personal_expenses"."vw_consolidado__dbt_tmp" rename to "vw_consolidado"
+[0m23:16:05.985103 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:05.986844 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: COMMIT
+[0m23:16:05.987195 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.987520 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: COMMIT
+[0m23:16:05.988648 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:05.990932 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"
+[0m23:16:05.991270 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."vw_consolidado__dbt_backup" cascade
+[0m23:16:06.003978 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:06.005239 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado (execute): 23:16:05.961024 => 23:16:06.005072
+[0m23:16:06.005573 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado: Close
+[0m23:16:06.006220 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41a77f810>]}
+[0m23:16:06.006717 [info ] [Thread-1 (]: 6 of 7 OK created sql table model personal_expenses.vw_consolidado ............. [[32mSELECT 0[0m in 0.05s]
+[0m23:16:06.007280 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado
+[0m23:16:06.007889 [debug] [Thread-1 (]: Began running node model.dbt_spreadsheet_transf_iv_expenses.vw_extrato
+[0m23:16:06.008426 [info ] [Thread-1 (]: 7 of 7 START sql table model personal_expenses.vw_extrato ...................... [RUN]
+[0m23:16:06.009128 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_spreadsheet_transf_iv_expenses.vw_consolidado, now model.dbt_spreadsheet_transf_iv_expenses.vw_extrato)
+[0m23:16:06.009433 [debug] [Thread-1 (]: Began compiling node model.dbt_spreadsheet_transf_iv_expenses.vw_extrato
+[0m23:16:06.012682 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.013186 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.vw_extrato (compile): 23:16:06.009645 => 23:16:06.013019
+[0m23:16:06.013492 [debug] [Thread-1 (]: Began executing node model.dbt_spreadsheet_transf_iv_expenses.vw_extrato
+[0m23:16:06.017227 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.017666 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.017972 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: BEGIN
+[0m23:16:06.018256 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:16:06.025022 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:06.025389 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.025751 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"} */
+
+  
+    
+
+  create  table "ivan_pessoal"."personal_expenses"."vw_extrato__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with extrato as (
+    SELECT 
+        categoria
+        , data
+        , extract(year from data) as ano
+        , extract(month from data) as mes
+        , descricao
+        , valor_total
+        , cod_conta
+        , natureza
+        , recorrencia
+    FROM  "ivan_pessoal"."personal_expenses"."stg_extrato"
+)
+, movimentacao as (
+	select 'Movimentação' as categoria
+		, data
+        , extract(year from data) as ano
+        , extract(month from data) as mes
+		, descricao
+		, valor_total
+		, origem as cod_conta
+		, 'Saída' as natureza
+		, 'Única' as recorrencia
+		from "ivan_pessoal"."personal_expenses"."stg_movimentacao"
+	union all
+	select 'Movimentação' as categoria
+		, data
+        , extract(year from data) as ano
+        , extract(month from data) as mes
+		, descricao
+		, valor_total
+		, destino as cod_conta
+		, 'Entrada' as natureza
+		, 'Única' as recorrencia
+		from "ivan_pessoal"."personal_expenses"."stg_movimentacao"
+)
+, consolidado as (
+	select * from "ivan_pessoal"."personal_expenses"."vw_consolidado"
+)
+select * from consolidado
+union all
+select * from extrato
+union all
+select * from movimentacao
+  );
+  
+[0m23:16:06.030356 [debug] [Thread-1 (]: SQL status: SELECT 599 in 0.0 seconds
+[0m23:16:06.033286 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.033604 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"} */
+alter table "ivan_pessoal"."personal_expenses"."vw_extrato" rename to "vw_extrato__dbt_backup"
+[0m23:16:06.034158 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:06.036442 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.036756 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"} */
+alter table "ivan_pessoal"."personal_expenses"."vw_extrato__dbt_tmp" rename to "vw_extrato"
+[0m23:16:06.037263 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m23:16:06.039003 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: COMMIT
+[0m23:16:06.039310 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.039606 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: COMMIT
+[0m23:16:06.041103 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:06.043359 [debug] [Thread-1 (]: Using postgres connection "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"
+[0m23:16:06.043669 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: /* {"app": "dbt", "dbt_version": "1.6.2", "profile_name": "dbt_spreadsheet_transf_iv_expenses", "target_name": "dev", "node_id": "model.dbt_spreadsheet_transf_iv_expenses.vw_extrato"} */
+drop table if exists "ivan_pessoal"."personal_expenses"."vw_extrato__dbt_backup" cascade
+[0m23:16:06.045878 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m23:16:06.047115 [debug] [Thread-1 (]: Timing info for model.dbt_spreadsheet_transf_iv_expenses.vw_extrato (execute): 23:16:06.013701 => 23:16:06.046931
+[0m23:16:06.047453 [debug] [Thread-1 (]: On model.dbt_spreadsheet_transf_iv_expenses.vw_extrato: Close
+[0m23:16:06.048108 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '68f223b9-e066-4cca-92ad-156505ccb32d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41a77e590>]}
+[0m23:16:06.048590 [info ] [Thread-1 (]: 7 of 7 OK created sql table model personal_expenses.vw_extrato ................. [[32mSELECT 599[0m in 0.04s]
+[0m23:16:06.049227 [debug] [Thread-1 (]: Finished running node model.dbt_spreadsheet_transf_iv_expenses.vw_extrato
+[0m23:16:06.050558 [debug] [MainThread]: Using postgres connection "master"
+[0m23:16:06.050841 [debug] [MainThread]: On master: BEGIN
+[0m23:16:06.051093 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:16:06.057846 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m23:16:06.058140 [debug] [MainThread]: On master: COMMIT
+[0m23:16:06.058404 [debug] [MainThread]: Using postgres connection "master"
+[0m23:16:06.058662 [debug] [MainThread]: On master: COMMIT
+[0m23:16:06.059044 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m23:16:06.059293 [debug] [MainThread]: On master: Close
+[0m23:16:06.059845 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:16:06.060148 [debug] [MainThread]: Connection 'model.dbt_spreadsheet_transf_iv_expenses.vw_extrato' was properly closed.
+[0m23:16:06.060498 [info ] [MainThread]: 
+[0m23:16:06.060851 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 0.45 seconds (0.45s).
+[0m23:16:06.062232 [debug] [MainThread]: Command end result
+[0m23:16:06.068044 [info ] [MainThread]: 
+[0m23:16:06.068445 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:16:06.068766 [info ] [MainThread]: 
+[0m23:16:06.069107 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m23:16:06.069606 [debug] [MainThread]: Command `dbt run` succeeded at 23:16:06.069510 after 0.57 seconds
+[0m23:16:06.069922 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41fa7ccd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41fa7e990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fc41d514c50>]}
+[0m23:16:06.070250 [debug] [MainThread]: Flushing usage events

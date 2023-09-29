@@ -1,0 +1,29 @@
+config:
+  use_colors: True
+
+dbt_spreadsheet_transf_iv_expenses:
+  target: dev
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: 192.168.1.15
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: ivan_pessoal
+      schema: personal_expenses
+
+    prod:
+      type: postgres
+      threads: 1
+      host: 192.168.1.41
+      port: 5432
+      user: postgres
+      pass: postgres
+      dbname: ivan_pessoal
+      schema: personal_expenses
+
+
+  
